@@ -20,6 +20,8 @@
 
 Welcome to **Marathon**, a command line tool that makes it easy to write, run and manage your Swift scripts. It's powered by the [Swift Package Manager](https://github.com/apple/swift-package-manager) and requires no modification to your existing scripts or dependency packages.
 
+##UPDATE : Added Support for Swift 4 and removed deprecated -C Flag 
+
 ## Features
 
 🐣 Create scripts
@@ -109,29 +111,11 @@ $ echo "https://github.com/JohnSundell/Files.git" > Marathonfile
 
 ### On macOS
 
-Using Homebrew:
-```sh
-brew install marathon-swift
-```
-
-Using [Mint](https://github.com/yonaskolb/mint):
-```sh
-$ mint run JohnSundell/Marathon
-```
-
 Using Make:
 ```sh
-$ git clone https://github.com/JohnSundell/Marathon.git
+$ git clone https://github.com/sahilchaddha/Marathon.git
 $ cd Marathon
 $ make
-```
-
-Using the Swift Package Manager:
-```sh
-$ git clone https://github.com/JohnSundell/Marathon.git
-$ cd Marathon
-$ swift build -c release -Xswiftc -static-stdlib
-$ cp -f .build/release/Marathon /usr/local/bin/marathon
 ```
 
 ### On Linux
